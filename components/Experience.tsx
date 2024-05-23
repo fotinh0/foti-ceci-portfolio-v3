@@ -34,11 +34,12 @@ const Experience = () => {
               <img
                 src={card.thumbnail}
                 alt={card.thumbnail}
-                className="lg:w-32 md:w-20 w-16"
+                className="lg:w-32 md:w-20 w-16 lg:h-32 md:h-20 h-16"
               />
               <div className="lg:ms-5">
                 <h1 className="text-start text-xl md:text-2xl font-bold">
-                  {card.title}
+                  {card.title}{" "}
+                  <span className="text-purple">@ {card.company}</span>
                 </h1>
                 <p className="text-start text-white-200 text-base md:text-xl">
                   {card.duration}

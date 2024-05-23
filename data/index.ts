@@ -163,23 +163,26 @@ export const projects = [
 export const experience = [
   {
     id: 1,
-    title: "Software Developer @ IBM",
+    title: "Software Developer",
+    company: "IBM",
     duration: "Jan 2022 - Apr 2024",
     desc: "Collaborate closely with engineers, designers, and product owners to develop, maintain, and test external and internal web applications utilizing React, NodeJS, and IBM DB2.",
     thumbnail: "/experience/ibm.svg",
   },
   {
     id: 2,
-    title: "Frontend Developer @ FA Euro",
+    title: "Frontend Developer",
+    company: "FA Euro",
     duration: "May 2022 - Jan 2021",
-    desc: "Developed and maintained website UI/UX using JavaScript and Wix. Optimized website performance and SEO strategies.",
-    thumbnail: "/experience/fa-euro.png",
+    desc: "Developed and maintained website UI/UX using JavaScript and Wix. Optimized website performance and implemented online payment processing.",
+    thumbnail: "/experience/faeuro.png",
   },
   {
     id: 3,
-    title: "Multimedia and Information Managament Intern @ PCI Media",
+    title: "Multimedia and Information Managament Intern",
+    company: "PCI Media",
     duration: "Nov 2020 - Feb 2021",
-    desc: "Assisted in the development of the company website using WordPress.",
+    desc: "Assisted in the development of the company website using WordPress. Designed and implemented company wide email signature.",
 
     thumbnail: "/experience/pcimedia.png",
   },
