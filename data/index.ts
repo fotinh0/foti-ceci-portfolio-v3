@@ -1,6 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -117,7 +118,7 @@ export const projects = [
   {
     id: 4,
     title: "Foti Banking App",
-    des: "A financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether.",
+    des: "A financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manage their finances altogether.",
     img: "/projects/foti-banking.png",
     iconList: [
       "/icons/next.svg",
@@ -149,7 +150,37 @@ export const projects = [
     title: "FA Euro Official Site",
     des: "This platform offers the latest news on the club, seamless purchasing of club merchandise, and a hub for active players.",
     img: "/projects/FAEuroNY.png",
-    iconList: ["/icons/wix.svg", "/icons/javascript.svg"],
+    iconList: [
+      "/icons/wix.svg",
+      "/icons/javascript.svg",
+      "/icons/html.svg",
+      "/icons/css.svg",
+    ],
     link: "https://www.faeuro.com/",
+  },
+];
+
+export const experience = [
+  {
+    id: 1,
+    title: "Software Developer @ IBM",
+    duration: "Jan 2022 - Apr 2024",
+    desc: "Collaborate closely with engineers, designers, and product owners to develop, maintain, and test external and internal web applications utilizing React, NodeJS, and IBM DB2.",
+    thumbnail: "/experience/ibm.svg",
+  },
+  {
+    id: 2,
+    title: "Frontend Developer @ FA Euro",
+    duration: "May 2022 - Jan 2021",
+    desc: "Developed and maintained website UI/UX using JavaScript and Wix. Optimized website performance and SEO strategies.",
+    thumbnail: "/experience/fa-euro.png",
+  },
+  {
+    id: 3,
+    title: "Multimedia and Information Managament Intern @ PCI Media",
+    duration: "Nov 2020 - Feb 2021",
+    desc: "Assisted in the development of the company website using WordPress.",
+
+    thumbnail: "/experience/pcimedia.png",
   },
 ];
