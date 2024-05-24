@@ -187,3 +187,16 @@ export const experience = [
     thumbnail: "/experience/pcimedia.png",
   },
 ];
+
+export const socialMedia = [
+  {
+    id: 1,
+    url: "https://github.com/fotinh0",
+    img: "/git.svg",
+  },
+  {
+    id: 2,
+    url: "https://www.linkedin.com/in/foti-ceci/",
+    img: "/link.svg",
+  },
+];
