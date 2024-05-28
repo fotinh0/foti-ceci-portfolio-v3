@@ -8,28 +8,6 @@ const Footer = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [btnLabel, setBtnLabel] = useState("Send message");
-
-  function encode(data: any) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-  // Handle form submission
-  function handleSubmit(e: any) {
-    e.preventDefault();
-    console.log("submit button");
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact-form", name, email, message }),
-    })
-      .then(() => setBtnLabel("Message sent!"))
-      .catch((error) => alert(error));
-  }
 
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
@@ -44,7 +22,8 @@ const Footer = () => {
         </p>
         <form
           name="contact-form"
-          onSubmit={handleSubmit}
+          method="POST"
+          action="/success"
           data-netlify="true"
           className="w-full md:w-[50%]"
         >
@@ -61,6 +40,7 @@ const Footer = () => {
                   type="text"
                   name="name"
                   id="name"
+                  required
                   autoComplete="given-name"
                   className="block w-full rounded-md border-0 px-3.5 py-2 bg-[#1b2942] text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setName(e.target.value)}
@@ -79,6 +59,7 @@ const Footer = () => {
                   type="email"
                   name="email"
                   id="email"
+                  required
                   autoComplete="email"
                   className="block w-full rounded-md border-0 px-3.5 py-2 bg-[#1b2942] text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setEmail(e.target.value)}
@@ -96,6 +77,7 @@ const Footer = () => {
                 <textarea
                   name="message"
                   id="message"
+                  required
                   rows={4}
                   className="block w-full rounded-md border-0 px-3.5 py-2 bg-[#1b2942] text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   defaultValue={""}
@@ -106,7 +88,7 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-fit m-auto">
             <MagicButton
-              title={btnLabel}
+              title="Send message"
               icon={<FaLocationArrow />}
               position="right"
               type="submit"
