@@ -2,12 +2,17 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { useForm } from "@formspree/react";
 
 const Footer = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [state, handleSubmit] = useForm("mqkrovzv");
+
+  useEffect(() => {
+    if (state.succeeded) {
+      window.location.href = "/success";
+    }
+  }, [state.succeeded]);
 
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
@@ -22,10 +27,8 @@ const Footer = () => {
         </p>
         <form
           name="contact-form"
-          method="POST"
-          action="/success"
-          data-netlify="true"
           className="w-full md:w-[50%]"
+          onSubmit={handleSubmit}
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div className="sm:col-span-2">
@@ -43,7 +46,6 @@ const Footer = () => {
                   required
                   autoComplete="given-name"
                   className="block w-full rounded-md border-0 px-3.5 py-2 bg-[#1b2942] text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
             </div>
@@ -62,7 +64,6 @@ const Footer = () => {
                   required
                   autoComplete="email"
                   className="block w-full rounded-md border-0 px-3.5 py-2 bg-[#1b2942] text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
             </div>
@@ -81,7 +82,6 @@ const Footer = () => {
                   rows={4}
                   className="block w-full rounded-md border-0 px-3.5 py-2 bg-[#1b2942] text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   defaultValue={""}
-                  onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
             </div>
