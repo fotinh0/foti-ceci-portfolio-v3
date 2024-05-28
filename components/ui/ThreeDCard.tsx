@@ -47,21 +47,17 @@ export const ThreeDCard = ({
           />
         </CardItem>
         <div className="flex items-center justify-between my-6">
-          <div className="flex items-center">
+          <div className="flex items-center flex-wrap gap-y-2">
             {iconList.map((icon, index) => (
               <div
                 key={index}
-                className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                className="border border-white/[.2] rounded-full bg-black w-10 h-10 flex justify-center items-center"
               >
                 <Tooltip
                   showArrow={true}
                   content={icon.name}
                   placement="bottom"
                   classNames={{
-                    base: [
-                      // arrow color
-                      // "before:bg-neutral-400 dark:before:bg-white",
-                    ],
                     content: [
                       "py-1 px-2 shadow-xl",
                       "text-black bg-white rounded",
