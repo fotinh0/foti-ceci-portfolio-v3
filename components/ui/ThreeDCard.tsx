@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./3d-card";
 import Link from "next/link";
+import { Tooltip } from "@nextui-org/tooltip";
 
 export const ThreeDCard = ({
   title,
@@ -18,7 +19,7 @@ export const ThreeDCard = ({
   img: string;
   href: string;
   github?: string;
-  iconList: string[];
+  iconList: { id: number; name: string; image: string }[];
 }) => {
   return (
     <CardContainer className="inter-var">
@@ -51,11 +52,24 @@ export const ThreeDCard = ({
               <div
                 key={index}
                 className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                style={{
-                  transform: `translateX(-${5 * index + 2}px)`,
-                }}
               >
-                <img src={icon} alt="icon5" className="p-2" />
+                <Tooltip
+                  showArrow={true}
+                  content={icon.name}
+                  placement="bottom"
+                  classNames={{
+                    base: [
+                      // arrow color
+                      // "before:bg-neutral-400 dark:before:bg-white",
+                    ],
+                    content: [
+                      "py-1 px-2 shadow-xl",
+                      "text-black bg-white rounded",
+                    ],
+                  }}
+                >
+                  <img src={icon.image} alt="icon5" className="p-2" />
+                </Tooltip>
               </div>
             ))}
           </div>

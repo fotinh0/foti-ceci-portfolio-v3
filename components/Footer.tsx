@@ -128,7 +128,7 @@ const Footer = () => {
           ))}
         </div>
         <p className="text-sm md:font-normal font-light">
-          Copyright © 2024 Foti Ceci
+          Developed by Foti Ceci
         </p>
       </div>
     </footer>
