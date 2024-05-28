@@ -152,7 +152,7 @@ export const projects = [
   {
     id: 3,
     title: "IBM Training",
-    des: "This application serves as a comprehensive platform for individuals and organizations to access a diverse range of courses and resources aimed at enhancing technology skills.",
+    des: "This application serves as a comprehensive platform for individuals and organizations to access a diverse range of courses and resources aimed at enhancing technological skills.",
     img: "/projects/IBMTraining.png",
     iconList: [
       {
@@ -289,7 +289,7 @@ export const experience = [
     title: "Software Developer",
     company: "IBM",
     duration: "Jan 2022 - Apr 2024",
-    desc: "Collaborate closely with engineers, designers, and product owners to develop, maintain, and test external and internal web applications utilizing React, NodeJS, and IBM DB2.",
+    desc: "Collaborated closely with engineers, designers, and product owners to develop, maintain, and test external and internal web applications utilizing React, NodeJS, and IBM DB2.",
     thumbnail: "/experience/ibm.svg",
   },
   {
