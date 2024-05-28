@@ -8,17 +8,18 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Web enthusiast with a passion for software development",
-    description: "",
+    title: "About Me",
+    description:
+      "Hello! My name is Foti Ceci and I like to code all web things. My interest in developed was discovered through the struggles of learning how to code for the first time in C++. Let me just say I dont recommend C++ for first time coder but if you are up for the challenge, go for it! lerning how to code for the first time with C++. However, I am grateful because I ran into JavaScript in attempt to learn an alternative language. From there, I ran with it and started building interactive webpages using HTML, CSS, and JavaScript.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
+    titleClassName: "justify-start",
+    img: "",
     spareImg: "",
   },
   {
     id: 2,
-    title: "I'm experienced working with global teams",
+    title: "Experienced working with global teams",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-52",
     imgClassName: "",
@@ -46,7 +47,6 @@ export const gridItems = [
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
     title: "Currently building a Soccer Live Score Tracker",

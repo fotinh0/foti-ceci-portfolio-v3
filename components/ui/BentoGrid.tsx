@@ -129,17 +129,66 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-52 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
-            {description}
-          </div>
-          {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
-          {/* remove mb-2 mt-2 */}
-          <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
-          >
-            {title}
-          </div>
+          {id === 1 ? (
+            <>
+              <div
+                className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+              >
+                {title}
+              </div>
+              <div className="font-sans mt-8 font-extralight md:text-lg lg:text-xl text-lg text-[#C1C2D3] z-10">
+                <p>
+                  Hello! My name is Foti Ceci, and I love coding everything
+                  web-related. My journey into development began with the
+                  struggles of learning C++ without any previous programming
+                  experience (I wouldn’t recommend C++ as a starting point for
+                  beginners, but if you&apos;re up for the challenge, go for
+                  it!). While exploring alternatives, I found JavaScript, and
+                  from there, I dove into creating interactive webpages using
+                  HTML, CSS, and JavaScript.
+                </p>
+                <br />
+                <p>
+                  Years later, I&apos;ve had the privelege to work at{" "}
+                  <a className="text-purple" href="#experience">
+                    a large corporation
+                  </a>
+                  ,
+                  <a className="text-purple" href="">
+                    a soccer team
+                  </a>
+                  , and{" "}
+                  <a className="text-purple" href="">
+                    a nonprofit media company
+                  </a>
+                  . My passion lies in crafting fast, accessible, and modern
+                  user interfaces that provide a positive user experience,
+                  regardless of the application&apos;s purpose.
+                </p>
+                <br />
+                <p>
+                  Outside of development, I am a huge soccer fan. I played
+                  soccer throughout my childhood and into college, where I was
+                  part of a team that reached the NCAA national tournament in
+                  2019. Currently, I&apos;m eagerly looking forward seeing my
+                  favorite team, Borussia Dortmund, play (and hopefully win) in
+                  the Champions League final.
+                </p>
+              </div>
+            </>
+          ) : (
+            <>
+              {" "}
+              <div className="font-sans font-extralight md:max-w-52 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+                {description}
+              </div>
+              <div
+                className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+              >
+                {title}
+              </div>
+            </>
+          )}
 
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
@@ -161,15 +210,11 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
               <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
                 }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 

@@ -1,4 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 import { Spotlight } from "./ui/Spotlight";
 import MagicButton from "./MagicButton";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -47,8 +47,8 @@ const Hero = () => {
 
           <a href="#about">
             <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
+              title="Learn more"
+              icon={<IoIosArrowDown size={16} />}
               position="right"
             />
           </a>
