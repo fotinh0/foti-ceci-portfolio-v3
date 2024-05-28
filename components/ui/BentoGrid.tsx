@@ -134,7 +134,7 @@ export const BentoGridItem = ({
               <div
                 className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
               >
-                {title} 👨‍💻
+                {title}
               </div>
               <div className="font-sans mt-8 font-extralight md:text-lg lg:text-xl text-lg text-[#C1C2D3] z-10">
                 <p>
@@ -167,12 +167,12 @@ export const BentoGridItem = ({
                 </p>
                 <br />
                 <p>
-                  Outside of development, I am a huge soccer fan ⚽️. I played
+                  Outside of development, I am a huge soccer fan. I played
                   soccer throughout my childhood and into college, where I was
                   part of a team that reached the NCAA national tournament in
                   2019. Currently, I&apos;m eagerly looking forward to seeing my
-                  favorite team, Borussia Dortmund💛, play (and hopefully win)
-                  in the Champions League final.
+                  favorite team, Borussia Dortmund, play (and hopefully win) in
+                  the Champions League final.
                 </p>
               </div>
             </>
