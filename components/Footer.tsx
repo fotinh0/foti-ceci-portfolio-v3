@@ -17,13 +17,12 @@ const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
-        </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out today and let&apos;s discuss how I can help you achieve your
-          goals.
+        <h1 className="heading lg:max-w-[45vw]">Get in touch</h1>
+        <p className="text-white-200 md:mt-10 my-5 text-center lg:max-w-[45vw]">
+          Whether you have questions or just want to say hello, don&apos;t
+          hesitate to get in touch. You can reach me by filling out the form
+          below or emailing me directly at{" "}
+          <span className="text-purple">foti.ceci@gmail.com</span>.
         </p>
         <form
           name="contact-form"
