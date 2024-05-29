@@ -146,8 +146,8 @@ export const projects = [
         image: "/icons/render.png",
       },
     ],
-    link: "https://fcsumz.netlify.app/",
-    github: "https://github.com/fotinh0/ai-article-summarizer-app",
+    link: "https://ai-image-generator-app-nu.vercel.app/",
+    github: "https://github.com/fotinh0/ai-image-generator-app",
   },
   {
     id: 3,
