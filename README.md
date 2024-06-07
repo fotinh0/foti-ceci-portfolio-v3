@@ -12,6 +12,7 @@ Live URL: [www.foticeci.com](https://www.foticeci.com)
 - React
 - NextJS
 - TypeScript
+- Three.js
 - Tailwind CS
 - Aceternity UI
 - Vercel
