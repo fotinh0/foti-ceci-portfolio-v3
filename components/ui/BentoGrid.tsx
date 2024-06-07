@@ -170,9 +170,8 @@ export const BentoGridItem = ({
                   Outside of development, I am a huge soccer fan. I played
                   soccer throughout my childhood and into college, where I was
                   part of a team that reached the NCAA national tournament in
-                  2019. Currently, I&apos;m eagerly looking forward to seeing my
-                  favorite team, Borussia Dortmund, play (and hopefully win) in
-                  the Champions League final.
+                  2019. Currently, I&apos;m looking forward to seeing the
+                  Albanian National team play in the Euros 2024 this summer.
                 </p>
               </div>
             </>
