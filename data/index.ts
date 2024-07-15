@@ -3,6 +3,7 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
+  { name: "Resume", link: "/FotiCeciResume.pdf", icon: "/icons/download.svg" },
 ];
 
 export const gridItems = [
@@ -321,5 +322,10 @@ export const socialMedia = [
     id: 2,
     url: "https://www.linkedin.com/in/foti-ceci/",
     img: "/link.svg",
+  },
+  {
+    id: 3,
+    url: "/FotiCeciResume.pdf",
+    img: "/icons/resume.svg",
   },
 ];
