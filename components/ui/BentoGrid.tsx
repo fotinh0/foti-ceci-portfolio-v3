@@ -168,17 +168,21 @@ export const BentoGridItem = ({
                 <br />
                 <p>
                   Outside of development, I am a huge soccer fan. I played
-                  soccer throughout my childhood and into college, where I was
-                  part of a team that reached the NCAA national tournament in
-                  2019. Currently, I&apos;m looking forward to seeing the
-                  Albanian National team play in the Euros 2024 this summer.
+                  soccer throughout my childhood and college, where I was part
+                  of a team that reached the NCAA national tournament in 2019.
+                  Currently, I&apos;m looking forward to supporting Borussia
+                  Dortmund for the upcoming Bundesliga season.
                 </p>
               </div>
             </>
           ) : (
             <>
               {" "}
-              <div className="font-sans font-extralight md:max-w-52 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+              <div
+                className={`font-sans font-extralight ${
+                  id !== 3 ? "md:max-w-52" : ""
+                } md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10`}
+              >
                 {description}
               </div>
               <div
