@@ -2,6 +2,9 @@
 
 import { projects } from "@/data";
 import { ThreeDCard } from "./ui/ThreeDCard";
+import MagicButton from "./MagicButton";
+import { IoIosArrowDown } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -23,6 +26,15 @@ const Projects = () => {
             />
           </div>
         ))}
+      </div>
+      <div className="flex justify-center">
+        <a href="https://github.com/fotinh0" target="_blank">
+          <MagicButton
+            title="Visit GitHub"
+            position="right"
+            icon={<FaGithub size={20} />}
+          />
+        </a>
       </div>
     </section>
   );

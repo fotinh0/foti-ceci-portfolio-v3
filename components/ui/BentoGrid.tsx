@@ -52,12 +52,12 @@ export const BentoGridItem = ({
     "Typescript",
     "React",
     "NextJS",
-    "GraphQL",
     "NodeJS",
     "MongoDB",
     "IBM DB2",
     "MySQL",
     "Tailwind",
+    "Material UI",
     "IBM Cloud",
     "AWS",
   ];
