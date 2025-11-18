@@ -140,10 +140,7 @@ export const BentoGridItem = ({
                 <p>
                   Hello! My name is Foti Ceci, and I love coding everything
                   web-related. My journey into development began with the
-                  struggles of learning C++ without any previous programming
-                  experience (I wouldn’t recommend C++ as a starting point for
-                  beginners, but if you&apos;re up for the challenge, go for
-                  it!). While exploring alternatives, I found JavaScript, and
+                  struggles of learning C++. While exploring other programming languages, I found JavaScript and
                   from there, I dove into creating interactive webpages using
                   HTML, CSS, and JavaScript.
                 </p>
