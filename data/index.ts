@@ -3,7 +3,11 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
-  { name: "Resume", link: "/FotiCeciResume.pdf", icon: "/icons/download.svg" },
+  // {
+  //   name: "Resume",
+  //   link: "/Foti_Ceci_Resume.pdf",
+  //   icon: "/icons/download.svg",
+  // },
 ];
 
 export const gridItems = [
@@ -331,9 +335,9 @@ export const socialMedia = [
     url: "https://www.linkedin.com/in/foti-ceci/",
     img: "/link.svg",
   },
-  {
-    id: 3,
-    url: "/FotiCeciResume.pdf",
-    img: "/icons/resume.svg",
-  },
+  // {
+  //   id: 3,
+  //   url: "/Foti_Ceci_Resume.pdf",
+  //   img: "/icons/resume.svg",
+  // },
 ];
