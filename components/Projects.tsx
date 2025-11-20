@@ -3,7 +3,6 @@
 import { projects } from "@/data";
 import { ThreeDCard } from "./ui/ThreeDCard";
 import MagicButton from "./MagicButton";
-import { IoIosArrowDown } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {

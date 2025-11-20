@@ -36,13 +36,13 @@ const Hero = () => {
           </p>
 
           <TextGenerateEffect
-            words="I'm a Software Developer"
+            words="I'm a Software Engineer"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            I specialize in transforming concepts into dynamic full-stack web
-            applications.
+            I build exceptional digital experiences that combine beautiful
+            design with powerful functionality.
           </p>
 
           <a href="#about">

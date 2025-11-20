@@ -7,7 +7,6 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
-import Lottie from "react-lottie";
 
 export const BentoGrid = ({
   className,
@@ -48,17 +47,16 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const stackList = [
-    "JavaScript",
-    "Typescript",
     "React",
-    "NextJS",
+    "Typescript",
+    "JavaScript",
     "NodeJS",
+    "PostgreSQL",
     "MongoDB",
-    "IBM DB2",
-    "MySQL",
-    "Tailwind",
-    "Material UI",
-    "IBM Cloud",
+    "TailwindCSS",
+    "Jest",
+    "Cypress",
+    "GraphQL",
     "AWS",
   ];
 
@@ -138,37 +136,30 @@ export const BentoGridItem = ({
               </div>
               <div className="font-sans mt-8 font-extralight md:text-lg lg:text-xl text-lg text-[#C1C2D3] z-10">
                 <p>
-                  Hello! My name is Foti Ceci, and I love coding everything
-                  web-related. My journey into development began with the
-                  struggles of learning C++. While exploring other programming languages, I found JavaScript and
-                  from there, I dove into creating interactive webpages using
-                  HTML, CSS, and JavaScript.
+                  Hey! I’m Foti. I am software engineer who loves bringing ideas
+                  to life on the web. I’ve spent the last few years working
+                  across full-stack development, building intuitive interfaces
+                  and reliable backend systems using React, TypeScript, and
+                  Node.js. I’m big on clean UX, thoughtful architecture, and
+                  continuously improving the product experience. I enjoy solving
+                  real problems, collaborating with great teams, and learning
+                  new tools or patterns that make me a stronger engineer.
                 </p>
                 <br />
                 <p>
-                  Years later, I&apos;ve had the privelege to work for{" "}
-                  <a className="text-purple" href="#experience">
-                    a large corporation
-                  </a>
-                  ,{" "}
-                  <a className="text-purple" href="">
-                    a soccer team
-                  </a>
-                  , and{" "}
-                  <a className="text-purple" href="">
-                    a nonprofit media company
-                  </a>
-                  . My passion lies in crafting fast, accessible, and modern
-                  user interfaces that provide a positive user experience,
-                  regardless of the application&apos;s purpose.
+                  Outside of work, you’ll usually find me playing soccer,
+                  traveling, gaming, or hanging out with friends. Whether it’s
+                  staying active on the field, exploring new destinations,
+                  getting lost in a good video game, or just enjoying good
+                  company, I try to keep a healthy balance between work,
+                  adventure, and community. I’m always down for a match, a
+                  spontaneous trip, a new food spot, or a late-night gaming
+                  session.
                 </p>
                 <br />
                 <p>
-                  Outside of development, I am a huge soccer fan. I played
-                  soccer throughout my childhood and college, where I was part
-                  of a team that reached the NCAA national tournament in 2019.
-                  Currently, I&apos;m looking forward to supporting Borussia
-                  Dortmund for the upcoming Bundesliga season.
+                  Whether it’s tech, soccer, or gaming, I’m always happy to
+                  chat.
                 </p>
               </div>
             </>
@@ -210,13 +201,13 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
-              <div
+              {/* <div
                 className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "block"
+                  copied ? 'block' : 'block'
                 }`}
               >
                 <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
+              </div> */}
 
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy email"}
