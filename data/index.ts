@@ -291,10 +291,10 @@ export const projects = [
 export const experience = [
   {
     id: 0,
-    title: "Frontend Software Engineer",
+    title: "Software Engineer",
     company: "Capitalize",
     duration: "Nov 2024 - Present",
-    desc: "Collaborate closely with engineers, designers, and product managers to develop, maintain, and test our web applications utilizing React, TypeScript, and Java.",
+    desc: "Collaborate with engineers, designers, and product managers to develop and maintain web apps that help people transfer retirement funds. Leveraging React, TypeScript, Java, Postgres, and AWS.",
     thumbnail: "/experience/capitalize.png",
   },
   {
